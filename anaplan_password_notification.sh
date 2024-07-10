@@ -35,12 +35,12 @@ if [ $days_until_expiry -le 5 ]; then
 		email_subject="Anaplan Password Renewal Reminder"
 		email_body="Anaplan password has expired $days_until_expiry days ago. Please update the password as soon as possible.\n\nThank you."
 		# Send the email
-		echo -e "$email_body" | mail -s "$email_subject"  HSDataEnggTeam@searshc.com
+		echo -e "$email_body" | mail -s "$email_subject"  email@domain.com
 	else 
 		# Compose the email message
 		email_subject="Anaplan Password Renewal Reminder"
 		email_body="Anaplan password will expire in $days_until_expiry days. Please update the password as soon as possible.\n\nThank you."
 		# Send the email
-		echo -e "$email_body" | mail -s "$email_subject"  HSDataEnggTeam@searshc.com
+		echo -e "$email_body" | mail -s "$email_subject"  email@domain.com
 	fi
 fi
